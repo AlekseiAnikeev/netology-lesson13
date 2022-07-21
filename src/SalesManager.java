@@ -19,11 +19,11 @@ public class SalesManager {
         return max;
     }
 
-    public int averageCalculation(int[] sales) {
-        int max = Integer.MIN_VALUE;
-        int min = Integer.MAX_VALUE;
-        int sum = 0;
-        for (int sale : sales) {
+    public long averageCalculation(long[] sales) {
+        long max = Integer.MIN_VALUE;
+        long min = Integer.MAX_VALUE;
+        long sum = 0;
+        for (long sale : sales) {
             sum += sale;
             if (sale > max) {
                 max = sale;
