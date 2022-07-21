@@ -7,6 +7,6 @@ public class Main {
         int[] sales = {19, 22, 312, 323, 25, 44};
         SalesManager salesManager = new SalesManager(sales);
         System.out.println("Максимальное значение продаж: " + salesManager.max());
-        System.out.println("Расчёт обрезанного среднего равен: " + salesManager.averageCalculation(sales));
+        System.out.println("Расчёт обрезанного среднего равен: " + salesManager.averageCalculation());
     }
 }

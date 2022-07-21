@@ -19,7 +19,7 @@ public class SalesManager {
         return max;
     }
 
-    public int averageCalculation(int[] sales) {
+    public int averageCalculation() {
         int min = Integer.MAX_VALUE;
         int sum = 0;
         for (int sale : sales) {
