@@ -18,4 +18,20 @@ public class SalesManager {
         }
         return max;
     }
+
+    public int averageCalculation(int[] sales) {
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+        int sum = 0;
+        for (int sale : sales) {
+            sum += sale;
+            if (sale > max) {
+                max = sale;
+            }
+            if (sale < min) {
+                min = sale;
+            }
+        }
+        return (sum - max - min) / (sales.length - 2);
+    }
 }
